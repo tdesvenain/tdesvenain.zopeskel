@@ -14,11 +14,19 @@
 #if str($add_profile) == 'True'
   <genericsetup:registerProfile
       name="default"
-      title="${namespace_package}.${package}"
+      title="${description}"
       directory="profiles/default"
-      description='Extension profile'
+      description='${namespace_package}.${package}'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <genericsetup:importStep
+      name="${namespace_package}.${package}-postInstall"
+      title="${namespace_package}.${package} postInstall import step"
+      description="Post install import step from ${namespace_package}.${package}"
+      handler=".setuphandlers.postInstall">
+  </genericsetup:importStep>
+
   <include file="upgrades.zcml" />
 #end if
 
