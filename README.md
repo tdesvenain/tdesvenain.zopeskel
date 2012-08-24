@@ -1,4 +1,0 @@
-tdesvenain.zopeskel
-===================
-
-zopeskel templates
