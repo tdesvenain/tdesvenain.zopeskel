@@ -39,6 +39,7 @@
   <include package="collective.mtrsetup" />
   <include package="collective.portlet.customizablerecent" />
   <include package="collective.usernamelogger" />
+  <include package="eea.tags" />
   <include package="ecreall.helpers.testing" />
   <include package="ecreall.helpers.upgrade" />
   <include package="ecreall.trashcan" />
