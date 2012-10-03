@@ -27,7 +27,7 @@ setup(name='tdesvenain.templates',
       install_requires=[
           'setuptools',
           'PasteScript',
-          'ZopeSkel<3.0',
+          'ZopeSkel',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
